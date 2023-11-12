@@ -1,0 +1,101 @@
+* {
+  font-family: "Tilt Neon", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.music-player {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(220, 217, 249) 0%,
+    rgb(172, 224, 217) 89.8%
+  );
+  width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+  border-radius: 10%;
+}
+.song-img {
+  width: 220px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+.music-player h1 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #72c95c;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #72c95c;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ee8fbf;
+  cursor: pointer;
+}
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: #dc83af;
+  color: white;
+}
+.volume-slider {
+  -webkit-appearance: none;
+  -moz-appearence: none;
+  appearance: none;
+  height: 5px;
+  background: #72c95c;
+}
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearence: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #72c95c;
+  border: 3px solid white;
+  cursor: pointer;
+  border-radius: 50%;
+}

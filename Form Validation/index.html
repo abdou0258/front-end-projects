@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/1484/1484799.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35eb5f5634.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      
+      <form action="" id="Form" novalidate>
+        <h1>Registration Form</h1>
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter you name" required>
+          <span id="nameError" style="color: red;"></span>
+        </div>
+        <div class="input-group">
+          <label for="number">Phone Number</label>
+          <input type="tel" placeholder="123-456-7890" id="phone" required>
+          <span id="phoneError" style="color: red;"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="example@address.com" required>
+          <span id="errorMessage" style="color: red;"></span>
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+            <textarea  id="message"  rows="5" placeholder="Enter your message"></textarea>
+            <span id="messageError" style="color: red;"></span>
+          
+
+          <button>Submit</button>
+
+        </div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

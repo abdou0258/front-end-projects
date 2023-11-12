@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'League Spartan', sans-serif;
+        }
+        body {
+            
+            font-family: Arial, sans-serif;
+            background:url("https://cdn.staticcrate.com/stock-hd/effects/footagecrate-4k-looping-tech-background-clean-blue-2-prev-full.png");
+        }
+        .container {
+            margin: 100px auto 0;
+            padding: 20px;
+            
+            border-radius: 5px;
+            
+            width: 80%;
+        }
+        #countdown {
+            font-size: 80px;
+            color: white;
+        }
+        img{
+            margin-bottom: 100px;
+        }
+        h2,p{
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+        }
+        h1{
+            font-size: 70px;
+            color: white;
+        }
+        .time span{
+            margin: 0 20px;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="bird-colorful-logo-gradient-vector_343694-1365-removebg-preview.png" width="200px" >
+        <h2>Website under Maintenance</h2>
+        <h1>We're <span style="color: rgb(0, 170, 255);font-weight: 600;">Launching</span> soon</h1>
+        
+        <div id="countdown"></div>
+        <div class="time"><span>hours</span><span>minutes</span><span>seconds</span></div>
+    </div>
+
+    <script>
+        // Function to set the target date if not already stored
+        function setTargetDate() {
+            if (!localStorage.getItem("targetDate")) {
+                const targetDate = new Date();
+                targetDate.setHours(targetDate.getHours() + 45);
+                localStorage.setItem("targetDate", targetDate);
+            }
+        }
+
+        // Function to get the remaining time and update the countdown
+        function updateCountdown() {
+            const targetDate = new Date(localStorage.getItem("targetDate"));
+            const currentDate = new Date();
+            const timeLeft = targetDate - currentDate;
+
+            if (timeLeft <= 0) {
+                countdownElement.innerHTML = "Now!";
+            } else {
+                const hours = Math.floor(timeLeft / 3600000);
+                const minutes = Math.floor((timeLeft % 3600000) / 60000);
+                const seconds = Math.floor((timeLeft % 60000) / 1000);
+
+                countdownElement.innerHTML = `${hours} ${minutes} ${seconds<10?"0"+seconds:seconds}`;
+            }
+        }
+
+        // Initial setup
+        setTargetDate();
+        const countdownElement = document.getElementById("countdown");
+        updateCountdown();
+
+        // Update the countdown every second
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

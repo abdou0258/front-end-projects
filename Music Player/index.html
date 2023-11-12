@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/295/295129.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35eb5f5634.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <div class="slider-container">
+          <i class="fa-solid fa-volume-low" style="color: #dc83af;margin: 5px;"></i>
+          <input type="range" min="1" max="100" value="50" class="volume-slider" onchange="setVolume()">
+          <i class="fa-solid fa-volume-high" style="color: #dc83af;margin: 5px;"></i>
+        </div>
+        <img class="song-img" src="" alt="">
+        <h1 class="song-title"></h1>
+        <p class="author"></p>
+
+        <audio id="song">
+          <source src="" type="audio/mpeg" id="source">
+        </audio>
+        <input type="range" value="0"  id="progress">
+
+        <div class="controls">
+          <div id="backward" onclick="backward()"><i class="fa-solid fa-backward" style="color: #0a101a;"></i></div>
+          <div onclick="playPause()"><i id="ctrlIcon" class="fa-solid fa-play" style="color: #0a101a;"></i></div>
+          <div id="forward" onclick="forward()"><i class="fa-solid fa-forward" style="color: #0a101a;"></i></div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+* {
+  font-family: "Tilt Neon", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+ background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+ min-height: 100vh;
+}
+.app{
+  max-width: 25%;
+  margin: 150px auto 0;
+  background-color: black;
+  border-radius: 30px;
+}
+.calculator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+#display{
+  height: 70px;
+  width: 100%;
+  text-align: right;
+  outline: none;
+  border: none;
+  font-size: 3em;
+  background: none;
+  color: white;
+  padding-right: 45px;
+  margin-top: 50px;
+  caret-color: transparent;
+  cursor: none;
+  
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  outline: 0;
+  border: 0;
+  color: white;
+}
+
+
+
+.grey{
+  background: grey;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 5px;
+  cursor:pointer;
+}
+.orange{
+  background: orange;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 5px;
+  cursor:pointer;
+}
+.black{
+  background: rgb(43, 43, 43);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 5px;
+  cursor:pointer;
+}
+.blackBig{
+  background: rgb(43, 43, 43);
+  width: 172px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 5px;
+  cursor:pointer;
+}

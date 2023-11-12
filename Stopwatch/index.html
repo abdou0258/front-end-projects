@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.icon-icons.com/icons2/474/PNG/512/stopwatch_46861.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35eb5f5634.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h1 id="displayTime">00:00:00</h1>
+      <div class="buttons">
+        <button id="lapRestart">Reset</button>
+        <button id="watchstart">
+          <i class="fa fa-play" id="playpause"></i>
+        </button>
+      </div>
+      <div id="laps"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

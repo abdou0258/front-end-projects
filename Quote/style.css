@@ -1,0 +1,74 @@
+* {
+  font-family: 'Cinzel', serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);  color: #000;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.modal{
+  width: 50%;
+  margin:  auto;
+  height: 100%;
+  display: flex;
+  border-radius: 20px;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: #ebebeb;
+  padding: 50px;
+  margin-top: 200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h2{
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#border{
+  width: 80px;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  margin-left:auto ;
+  margin-right: auto;
+}
+#name{
+  font-weight: bold;
+  margin: 20px 35px 20px 0;
+  float: right;
+  
+  
+}
+#quote{
+  text-align: center;
+}
+.modal button{
+  border: 0;
+  outline: 0;
+  background: none;
+  padding: 14px 25px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.modal button:hover{
+  background: black;
+  color: white;
+  transition: 300ms;
+}
+
+
+.buttons{
+ 
+  margin-top: 20px;
+  text-align: center;
+  
+
+}
