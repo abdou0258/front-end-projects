@@ -4,9 +4,10 @@
 body {
   padding: 0;
   margin: 0;
+  background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
 .container {
-  background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  
   width: 100%;
   min-height: 100vh;
   padding-top: 100px;
@@ -89,3 +90,20 @@ i {
 .left{
     display: flex;
 }
+
+.task-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.delete-btn{
+  cursor: pointer;
+}
+
+.task-name{
+  display: flex;
+  align-items: center;
+}
+
